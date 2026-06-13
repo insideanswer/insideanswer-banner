@@ -102,10 +102,16 @@
   .logo-area img { display:block; width:100%; height:auto; max-height:170px; object-fit:contain; }
 
   @media (max-width: 640px) {
-    .card { -webkit-flex-direction: column; flex-direction: column; }
-    .headline { font-size: 30px; }
-    .logo-area { width: 100%; margin-top: 28px; }
-    .logo-area img { max-height: 90px; }
+    body { gap: 14px; }
+    .card { -webkit-flex-direction: column; flex-direction: column;
+            padding: 32px 26px; min-height: 0; }
+    .content { padding-right: 0; }
+    .tag { margin-bottom: 10px; }
+    .headline { font-size: 26px; margin-bottom: 6px; }
+    .sub { font-size: 13px; margin-bottom: 18px; }
+    .logo-area { width: 100%; margin-top: 18px;
+                 -webkit-justify-content: flex-start; justify-content: flex-start; }
+    .logo-area img { max-height: 52px; }
   }
 </style>
 </head>
